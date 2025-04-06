@@ -124,6 +124,13 @@ a {
 }
 
 /* Команда / Портфоліо */
+.our-team {
+  background-color: var(--team-bg-color);
+}
+
+.our-team-list {
+  background-color: #ffffff;
+}
 
 .our-team-title,
 .our-portfolio-title {
