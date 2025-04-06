@@ -61,13 +61,16 @@ a {
   color: var(--headers-color);
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .contacts-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  font-style: normal;
 }
 
 .navigation-link:hover,
@@ -80,12 +83,6 @@ a {
 .hero-image,
 .page-footer {
   background-color: var(--second-bg-color);
-}
-
-.hero-image {
-  width: 1440px;
-  height: 600px;
-  text-align: center;
 }
 
 /* Спеціалізація */
@@ -117,10 +114,6 @@ a {
   color: var(--hidden);
 }
 
-.feature-item {
-  width: 264px;
-  height: 104px;
-}
 .feature-title {
   color: var(--headers-color);
   font-weight: 500;
@@ -131,7 +124,7 @@ a {
 
 /* Команда / Портфоліо */
 .our-team {
-  background-color: var(--team-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 .our-team-title,
@@ -140,8 +133,8 @@ a {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--headers-color);
+  text-transform: capitalize;
 }
 
 /* Портфоліо */
@@ -151,17 +144,7 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--headers-color);
-}
-
-.project-card-title,
-.project-card-content {
-  text-align: left;
-}
-
-.person-card-content {
-  text-align: center;
 }
 
 /* Футер */
