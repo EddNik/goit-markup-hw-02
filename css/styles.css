@@ -4,6 +4,8 @@
   --primary-bg-color: #ffffff;
   --text-opposite-color: var(--primary-bg-color);
   --second-bg-color: var(--headers-color);
+  --footer-text-color: var(--team-bg-color);
+  --team-bg-color: #f4f4fd;
   --primary-text-color: #434455;
   --headers-color: #2e2f42;
   --hidden: #ffffff00;
@@ -11,26 +13,15 @@
   --button-color: var(--logo-color);
   --hover-focus-color: #404bbf;
 }
-/* 
-:root {
-  --iris: #4d5ae5;
-  --ocean: #404bbf;
-  --navy-blue: #2e2f42;
-  --green: #31d0aa;
-  --slate: #434455;
-  --light-slate: #8e8f99;
-  --cornflower: #e7e9fc;
-  --cloud: #f4f4fd;
-  --navy-blue-modal: rgba(46, 47, 66, 0.4);
-  --grey: rgba(46, 47, 66, 0.7);
-  --white: #ffffff;
-  --dairy: #fcfcfc;
-} */
 
 body {
   font-family: var(--main-font-family);
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 ul,
@@ -43,12 +34,10 @@ a {
 }
 
 .site-header {
-  /* border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
-  height: 72px; */
   background-color: var(--primary-bg-color);
 }
 
+/* Логотип */
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -56,24 +45,20 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  font-family: var(--second-font-family);
 }
 
 .header-logo .logo-part {
-  font-family: var(--second-font-family);
   color: var(--headers-color);
 }
 
-.footer-logo .logo-part {
-  color: #f4f4fd;
-}
-
+/* Навігація */
 .navigation-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--headers-color);
-  cursor: pointer;
 }
 
 .contacts-link {
@@ -92,13 +77,18 @@ a {
   color: var(--hover-focus-color);
 }
 
-.hero-image {
+.hero-image,
+.page-footer {
   background-color: var(--second-bg-color);
+}
+
+.hero-image {
   width: 1440px;
   height: 600px;
   text-align: center;
 }
 
+/* Спеціалізація */
 .hero-image-title {
   font-weight: 700;
   font-size: 56px;
@@ -127,7 +117,55 @@ a {
   color: var(--hidden);
 }
 
-.feature-list .feature-item {
+.feature-item {
   width: 264px;
   height: 104px;
+}
+.feature-title {
+  color: var(--headers-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Команда / Портфоліо */
+.our-team {
+  background-color: var(--team-bg-color);
+}
+
+.our-team-title,
+.our-portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--headers-color);
+}
+
+/* Портфоліо */
+.person-card-title,
+.project-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--headers-color);
+}
+
+.project-card-title,
+.project-card-content {
+  text-align: left;
+}
+
+.person-card-content {
+  text-align: center;
+}
+
+/* Футер */
+.footer-logo .logo-part,
+.page-footer-text {
+  color: var(--footer-text-color);
 }
