@@ -129,7 +129,7 @@ a {
 }
 
 .our-team-item {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 
 .our-team-title,
